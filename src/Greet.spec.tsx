@@ -9,7 +9,6 @@ test('Greet renders correctly', () => {
 })
 test('Greet returns a name',() => {
 render(<Greet name="sameera" />);
-screen.debug();
 const textElement = screen.getByText('hello sameera');
 expect(textElement).toBeInTheDocument();
 })
