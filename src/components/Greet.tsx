@@ -1,13 +1,11 @@
 import React from 'react'
 
-type GreetProps= {
-    name?: string
-}
+import {GreetProps} from "./Greet.type";
 
 const Greet = ({name}:GreetProps) => {
   return (
     // eslint-disable-next-line no-restricted-globals
-   <h1>hello {name}</h1> 
+   <h1>hello {name ? name : 'Guest'}</h1> 
   )
 }
 
