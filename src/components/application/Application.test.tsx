@@ -15,5 +15,8 @@ expect(jobLocationElement).toBeInTheDocument();
 const termsElement = screen.getByRole('checkbox', {  name: /i agree to the terms and conditions\./i});
 expect(termsElement).toBeInTheDocument();
 
+//checking if the submit button is present in the component
+const submitElement = screen.getByRole('button');
+expect(submitElement).toBeInTheDocument();
   });
 });
