@@ -21,12 +21,7 @@ describe("ThemedComponent", () => {
         const buttonElement = screen.getByRole('button');
     //   await user.click(buttonElement);
     fireEvent.click(buttonElement) // when using fireEvent the function doesn't have to be async
-      expect(themeElement.textContent).toBe('dark');
-
-      // toggle theme alternate
-
-   
-      
+      expect(themeElement.textContent).toBe('dark');    
     })
 
 })
