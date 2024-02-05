@@ -22,3 +22,18 @@ body {
   align-items: center;
   margin: 1rem auto;
 }
+.themed-component {
+  padding: 2rem;
+  border: 1px solid orangered;
+  transition: background-color 0.2s ease-in-out;
+
+}
+.themed-component.light {
+  background-color: #fff;
+  color: #333;
+}
+
+.themed-component.dark {
+  background-color: #333;
+  color: #fff;
+}
